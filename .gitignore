@@ -1,0 +1,5 @@
+profiles/
+logs/
+__pycache__/
+*.pyc
+accounts.txt
