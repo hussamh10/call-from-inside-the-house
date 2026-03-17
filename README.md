@@ -24,10 +24,10 @@ pip install -r requirements.txt
 Add your accounts to `accounts.txt` (one username and password per pair, separated by blank lines):
 
 ```
-aceap0001
+username
 mypassword
 
-aceap0002
+username
 mypassword
 ```
 
