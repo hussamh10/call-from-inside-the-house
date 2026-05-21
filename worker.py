@@ -37,7 +37,7 @@ from selenium.common.exceptions import (
 # ---------------------------------------------------------------------------
 COLAB_URL = "https://colab.research.google.com/#create=true"
 NUM_TABS = 3
-MONITOR_INTERVAL = 15          # seconds between output checks
+MONITOR_INTERVAL = 120         # seconds between output checks (post-setup)
 BOT_BLOCKED_TAB_THRESHOLD = 1  # bot_blocked count for a tab to be "blocked"
 BLOCKED_TABS_TO_RESTART = 2    # how many tabs must be blocked to trigger restart
 RESTART_DELAY = 30             # seconds to wait after teardown before re-running

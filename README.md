@@ -53,6 +53,8 @@ Press `Ctrl+C` to gracefully stop all workers and Chrome instances.
 | `profiles/` | Persistent Chrome profiles per account (auto-created) |
 | `logs/` | Per-account log files |
 | `start_colab_legacy.py` | Previous single-account version (kept for reference) |
+| `manage_sessions.py` | List or terminate all Colab runtime sessions per account |
+| `rotate_colab.sh` | Run `start_colab.py` in a loop, terminating sessions every `CYCLE_HOURS` (default 3) |
 
 ## Config
 
@@ -61,7 +63,7 @@ Edit constants at the top of `worker.py`:
 | Variable | Default | Description |
 |---|---|---|
 | `NUM_TABS` | 3 | Colab tabs per Chrome window |
-| `MONITOR_INTERVAL` | 15 | Seconds between output checks |
+| `MONITOR_INTERVAL` | 120 | Seconds between output checks (post-setup) |
 | `BOT_BLOCKED_TAB_THRESHOLD` | 1 | bot_blocked count for a tab to be "blocked" |
 | `BLOCKED_TABS_TO_RESTART` | 2 | How many blocked tabs trigger a full restart |
 | `RESTART_DELAY` | 30 | Seconds to wait after teardown before re-running |
